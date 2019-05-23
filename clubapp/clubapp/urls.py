@@ -1,0 +1,13 @@
+from django.urls import path
+from . import views
+
+urlpatterns=[
+    path('', views.index, name='index'),
+    path('getResources/', views.getResources, name='resources'),
+    path('getMeetings', views.getMeetings, name='meetings'),
+    path('meetingMinutes/<int:id>', views.meetingMinutes, name='meetingminutes'),
+    path('meetingDetails/<int:id>', views.meetingDetails, name='meetingdetails'),
+    path('newResource/', views.newResource, name='newresource'),
+    path('loginmessage/', views.loginmessage, name='loginmessage'),
+    path('logoutmessage/', views.logoutmessage, name='logoutmessage'),
+]
