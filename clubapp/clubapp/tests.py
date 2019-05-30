@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
-from .models import Meeting, Resource, MeetingMinutes, Event
+from .models import Meeting, Resource, Event
 from django.contrib.auth.models import User
 
 # Create your tests here.

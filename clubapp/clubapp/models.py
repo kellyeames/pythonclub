@@ -17,7 +17,7 @@ class Meeting(models.Model):
         verbose_name_plural='meetings'
 
 class MeetingMinutes(models.Model):
-    duration_id=models.CharField(max_length=255)
+    #duration_id=models.CharField(max_length=255)
     meeting_id=models.ForeignKey(Meeting, on_delete=models.DO_NOTHING)
     user=models.ManyToManyField(User)
     meetingtext=models.TextField()
