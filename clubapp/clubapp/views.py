@@ -46,7 +46,7 @@ def logoutmessage(request):
     return render(request, 'clubapp/logoutmessage.html')
 
 #@login_required-commented out 
-def newResource(request):
+'''def newResource(request):
      form=ResourceForm
      if request.method=='POST':
           form=ResourceForm(request.POST)
@@ -56,7 +56,7 @@ def newResource(request):
                form=ResourceForm()
      else:
           form=ResourceForm()
-     return render(request, 'clubapp/newresource.html', {'form': form})
+     return render(request, 'clubapp/newresource.html', {'form': form})'''
 
 
 
